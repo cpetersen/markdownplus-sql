@@ -1,6 +1,6 @@
 # Markdownplus::Sql
 
-TODO: Write a gem description
+SQL plugin for [Markdownplus](https://github.com/cpetersen/markdownplus)
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+  ```sql('postgres://username:password@ec2-12-345-678-9.compute-1.amazonaws.com:1234/database'),set('my_data_variable_name'),empty()
+  select  name, 
+          email, 
+          bio, 
+          twitter_handle 
+  from    users 
+  limit   25
+```
 
 ## Contributing
 
