@@ -4,7 +4,7 @@ require "sequel"
 module Markdownplus
   module Sql
     class SqlHandler < Handler
-      def execute(input, parameters, warnings, errors)
+      def execute(input, parameters, variables, warnings, errors)
         output = nil
         if parameters==nil
           errors << "No connection url given"
