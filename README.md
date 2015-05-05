@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Usage
 
 ```
-  ```sql('postgres://username:password@ec2-12-345-678-9.compute-1.amazonaws.com:1234/database'),set('my_data_variable_name'),empty()
+  ```sql('postgres://username:password@ec2-12-345-678-9.compute-1.amazonaws.com:1234/database'),set('my_data_variable_name'),csv2html()
   select  name, 
           email, 
           bio, 
